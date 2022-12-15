@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Document</title>
+</head>
+<body>
+  <!-- Container Wrapper Main Container -->
+  <div class="body-container flex-between">
+    <!-- Sidebar different Tabs -->
+    <div class="sidebar">
+      <div class="sidebar-wrapper flex-between">
+        <div class="sidebar-item-wrapper sidebar-items">
+          <img class="overview-img" src="./assets/imgs/overview.png" alt="overview">
+          <p class="overview-title">Overview</p>
+        </div>
+        <div class="sidebar-item-wrapper">
+          <img class="overview-img" src="./assets/imgs/store.png" alt="store">
+          <p class="overview-title">Store</p>
+        </div>
+        <div class="sidebar-item-wrapper">
+          <img class="overview-img" src="./assets/imgs/pso.png" alt="pso">
+          <p class="overview-title">POS</p>
+        </div>
+        <div class="sidebar-item-wrapper">
+          <img class="overview-img" src="./assets/imgs/order.png" alt="order">
+          <p class="overview-title">Order</p>
+        </div>
+        <div class="sidebar-item-wrapper">
+          <img class="overview-img" src="./assets/imgs/marketing.png" alt="Marketing">
+          <p class="overview-title">Marketing</p>
+        </div>
+        <div class="sidebar-item-wrapper">
+          <img class="overview-img" src="./assets/imgs/account.png" alt="Accounts">
+          <p class="overview-title">Accounts</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main content area-->
+    <main class="main-content">
+      <!-- Navbar -->
+      <nav class="navbar">
+        <div class="flex-between">
+          <ul>
+            <li class="flex-between merchant-wrapper">
+              <img class="merchant-logo" src="./assets/imgs/logo.png" alt="logo">
+              <span class="merchant-name">Merchant Name</span>
+            </li>
+          </ul>
+          <ul class="notification">
+            <div class="notification-wrapper d-inline">
+              <img src="./assets/imgs/alert.png" alt="alert">
+              <span class="alert-number">5</span>
+            </div>
+            <div class="notification-wrapper messages-wrapper d-inline">
+              <img src="./assets/imgs/messages.png" alt="messages">
+              <span class="messages-number">12</span>
+            </div>
+          </ul>
+        </div>
+      </nav>
+
+<!-- main content wrapper content to be changed-->
+      <div class="main-content-wrapper">
+<!-- this main-content will change according to the content  -->
+        <div class="main-content">
+          <section class="status">
+            <div class="status-container">
+              <div class="status-title">
+                <span>Your Order</span>
+              </div>
+                <div class="status-card-wrapper">
+                  <!-- Cards -->
+                  <div class="status-card status-card-new">
+                    <span class="status-card-number">4</span>
+                    <span class="status-card-category">New</span>
+                  </div>
+                  <div class="status-card status-card-shipping">
+                    <span class="status-card-number">10</span>
+                    <span class="status-card-category">Shipping</span>
+                  </div>
+                  <div class="status-card status-card-feedback">
+                    <span class="status-card-number">5</span>
+                    <span class="status-card-category">Feedback</span>
+                  </div>
+                  <div class="status-card status-card-cancel">
+                    <span class="status-card-number">4</span>
+                    <span class="status-card-category">Cancel</span>
+                  </div>
+                </div>
+            </div>
+          </section>
+
+          <!-- Analysis -->
+          <section class="analysis">
+
+            <div class="flex-between mb-3">
+              <div class="analysis-btn-wrapper">
+              <span class="d-inline analysis-title">Analysis</span>
+                <button class="btn analysis-btn income-btn analysis-btn-active">Income</button>
+                <button class="btn analysis-btn view-btn">View</button>
+                <button class="btn analysis-btn order-btn">Order</button>
+                <button class="btn analysis-btn access-btn">Access</button>
+              </div>
+              <div class="analysis-search-wrapper">
+                <input type="search" name="search" id="search" placeholder="Most view" class="analysis-search-bar">
+                <div class="arrow-wrapper">
+                  <span class="arrow arrow-up"></span>
+                  <span class="arrow arrow-down"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="graph-wrapper flex-between">
+              <div class="graph">
+                <p class="graph-here">Graph here</p>
+              </div>
+
+              <div class="graph-logs">
+
+                <div class="flex-between mb-1">
+                  <div class="graph-logs-wrapper">
+                    <p class="graph-logs-title">Access times</p>
+                    <p class="graph-logs-number">100</p>
+                    <p>vs yesterday -25% </p>
+                  </div>
+
+                  <div class="graph-logs-wrapper">
+                    <p class="graph-logs-title">View</p>
+                    <p class="graph-logs-number">300</p>
+                    <p>vs yesterday</p>
+                  </div>
+                </div>
+
+                <div class="flex-between">
+                  <div class="graph-logs-wrapper">
+                    <p class="graph-logs-title">Order</p>
+                    <p class="graph-logs-number">3</p>
+                    <p>vs yesterday</p>
+                  </div>
+                  <div class="graph-logs-wrapper">
+                    <p class="graph-logs-title">Income</p>
+                    <p class="graph-logs-number">$ 4200</p>
+                    <p>vs yesterday</p>
+                  </div>
+                </div>
+                </div>
+            </div>
+          </section>
+        </div>
+        
+      </div>
+    </main>
+  </div>
+</body>
+</html>

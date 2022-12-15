@@ -1,0 +1,317 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Typography */
+img {
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+input,
+button {
+  font-family: inherit;
+}
+
+.mb-1 {
+  margin-bottom: 10px;
+}
+
+.mb-2 {
+  margin-bottom: 20px;
+}
+
+.mb-3 {
+  margin-bottom: 30px;
+}
+
+/* utilities */
+
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.d-inline {
+  display: inline-block;
+}
+
+.btn {
+  font-size: 20px;
+  padding: 7px 30px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  outline: none;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+/* Space Spliter */
+
+.body-container {
+  align-items: flex-start;
+}
+
+.sidebar {
+  width: 10%;
+  box-shadow: 5px 5px 5px -5px #707070;
+  -webkit-box-shadow: 5px 5px 5px -5px #707070;
+  -moz-box-shadow: 5px 5px 5px -5px #707070;
+}
+
+.main-content {
+  width: 90%;
+}
+
+/* Sidebar */
+
+.sidebar-wrapper {
+  flex-direction: column;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.sidebar-item-wrapper {
+  color: #919191;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+
+.sidebar-items {
+  color: #107899;
+}
+
+/* Nav */
+
+.navbar {
+  padding: 20px 50px 20px 20px;
+  box-shadow: 5px 5px 5px -5px #707070;
+  -webkit-box-shadow: 5px 5px 5px -5px #707070;
+  -moz-box-shadow: 5px 5px 5px -5px #707070;
+}
+
+.merchant-wrapper {
+  justify-content: center;
+}
+
+.merchant-logo {
+  max-width: 60px;
+  max-height: 60px;
+}
+
+.merchant-name {
+  font-size: 35px;
+  color: #606060;
+  margin-left: 15px;
+}
+
+.notification {
+  width: 120px;
+}
+
+.notification-wrapper {
+  position: relative;
+  cursor: pointer;
+}
+
+.alert-number,
+.messages-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -5px;
+  right: -15px;
+  min-width: 26px;
+  min-height: 26px;
+  background: #B70F0F;
+  color: #fff;
+  border-radius: 50%;
+}
+
+.messages-wrapper {
+  margin-left: 40px;
+}
+
+.messages-wrapper > span{
+  top: -10px;
+}
+
+/* status */
+
+.main-content-wrapper {
+  padding: 20px;
+  background: #F6F6F6;
+}
+
+.status,
+.analysis {
+  padding: 20px;
+  background: #fff;
+  margin-bottom: 20px;
+}
+
+.status-card-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.status-title {
+  margin-bottom: 20px;
+}
+
+.status-card {
+  width: 300px;
+  text-align: center;
+  border: 1px solid #FF2BA8;
+}
+
+.status-card-number {
+  font-size: 30px;
+  display: block;
+  padding-block: 15px;
+}
+
+.status-card-category {
+  display: block;
+  font-size: 20px;
+  background-color: #FF2BA8;
+  color: #fff;
+  padding-block: 3px;
+}
+
+/* status-card-new */
+
+.status-card-shipping {
+  border: 1px solid #24A9E0;
+}
+
+.status-card-shipping > .status-card-category {
+  background-color: #24A9E0;
+}
+
+.status-card-feedback {
+  border: 1px solid #107899;
+}
+
+.status-card-feedback > .status-card-category {
+  background-color: #107899;
+}
+
+.status-card-cancel {
+  border: 1px solid #606060;
+}
+
+.status-card-cancel > .status-card-category {
+  background-color: #606060;
+}
+
+/* Analysis */
+
+.analysis-title {
+  font-size: 25px;
+}
+
+.analysis-btn {
+  color: #107899;
+  background: #fff;
+  border: 1px solid #107899;
+}
+
+.analysis-btn-active {
+  background: #107899;
+  color: #fff;
+}
+
+.income-btn {
+  margin-left: 50px;
+}
+
+.analysis-search-wrapper {
+  position: relative;
+}
+
+.analysis-search-bar {
+  display: inline-block;
+  padding: 15px;
+  border-radius: 99px;
+  outline: none;
+  color: #606060;
+  border: 1px solid #CECECE;
+}
+
+.arrow-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.arrow {
+  display: inline-block;
+  rotate: 180deg;
+  width: 0;
+	height: 0;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+	border-top: 8px solid #107899;
+  position: absolute;
+  right: 15px;
+}
+
+.arrow-up {
+
+  top: 15px;
+}
+
+.arrow-down {
+  border-top: 0;
+  top: 25px;
+	border-bottom: 8px solid #107899;
+}
+
+/* Graph */
+
+.graph-here {
+  width: 100%;
+  height: 100%;
+  background: #ddd;
+  text-align: center;
+  padding-block: 100px;
+}
+
+.graph {
+  width: 60%
+}
+
+.graph-logs {
+  width: 35%;
+  color: #606060;
+}
+
+.graph-logs-title {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.graph-logs-number {
+  color: #107899;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
